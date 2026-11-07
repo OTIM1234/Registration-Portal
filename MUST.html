@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUST Online Registration Portal</title>
+
+<link rel="stylesheet" href="MUST.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- University heading -->
+<header>
+<div class="logo">MUST</div>
+
+<h2>MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h2>
+
+<p class="subtitle">Online Regsitration Portal</p>
+</header>
+
+<!-- Sign-in form -->
+<div class="form-box">
+<h3>Welcome Back</h3>
+<p>Log in to access your application form</p>
+
+<form>
+<label for="loginEmail">Email Address</label>
+<input type="email" id="loginEmail"
+placeholder="Enter Your Email" required>
+
+<label for="loginPassword">Password</label>
+<input type="password" id="loginPassword"
+placeholder="Enter your password" required>
+
+<a href="#" class="forgot">Forgot your password?</a>
+
+<button type="submit" class="signin">
+Sign In
+</button>
+</form>
+
+<br/>
+<!--MESSAGE-->
+<p id="message"></p>
+
+<p class="new-user">New to this portal?</p>
+
+<div class="buttons">
+<button type="button" onclick="openForm()">
+Create Account
+</button>
+
+<button type="button" onclick="showHelp()">
+How to Apply
+</button>
+</div>
+</div>
+</div>
+
+<!-- Create account pop-up -->
+<div class="overlay" id="registerOverlay">
+<div class="register-box">
+
+<button class="close" onclick="closeForm()"
+aria-label="Close registration form">X</button>
+
+<h3>Create Account</h3>
+<p>Provide your details to receive a temporary password.</p>
+
+<form>
+<label for="surname">Surname</label>
+<input type="text" id="surname"
+placeholder="Surname" required>
+
+<label for="OtherNames">Other Names</label>
+<input type="text" id="otherNames"
+placeholder="Other Names" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone"
+placeholder="Enter Your Phone Number" required>
+
+<label for="registerEmail">Email Address</label>
+<input type="email" id="registerEmail"
+placeholder="Enter Your Email" required>
+
+<div class="buttons">
+<button type="button" onclick="closeForm()">
+Close
+</button>
+
+<button type="submit" class="signin">
+Create Account
+</button>
+</div>
+</form>
+</div>
+</div>
+
+<script>
+function openForm() {
+document.getElementById("registerOverlay")
+.style.display = "flex";
+}
+
+function closeForm() {
+document.getElementById("registerOverlay")
+.style.display = "none";
+}
+
+function showHelp() {
+alert("Please create an account or sign in to begin your application.");
+}
+</script>
+
+</body>
+</html>

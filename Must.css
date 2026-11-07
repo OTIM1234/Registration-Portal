@@ -1,0 +1,219 @@
+/* General page styling */
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f1f4ff;
+color: #222;
+}
+
+/* Main container */
+.container {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 25px 15px;
+}
+
+/* University heading */
+header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.logo {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+background: white;
+border: 2px solid #ddd;
+color: #3030a8;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+margin: auto auto 12px;
+}
+
+header h2 {
+font-size: 18px;
+max-width: 420px;
+margin: 8px 0;
+}
+
+.subtitle {
+background: #e1e0ff;
+color: #3030a8;
+border-radius: 20px;
+padding: 6px 12px;
+font-size: 12px;
+display: inline-block;
+}
+
+/* Sign-in form */
+.form-box {
+background: white;
+width: 100%;
+max-width: 370px;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 8px 25px #00000012;
+}
+
+.form-box h3 {
+margin-bottom: 5px;
+}
+
+.form-box p {
+font-size: 12px;
+color: #777;
+}
+
+/* Input labels */
+label {
+display: block;
+font-size: 13px;
+font-weight: bold;
+margin-top: 18px;
+margin-bottom: 8px;
+}
+
+/* Input fields */
+input {
+width: 100%;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 6px;
+outline: none;
+font-size: 13px;
+}
+
+input:focus {
+border-color: #3535ad;
+box-shadow: 0 0 4px #3535ad40;
+}
+
+/* Forgot password link */
+.forgot {
+display: block;
+margin-top: 12px;
+font-size: 12px;
+color: #3434a8;
+text-decoration: none;
+}
+
+/* Buttons */
+button {
+cursor: pointer;
+padding: 11px;
+border: 1px solid #ccc;
+border-radius: 6px;
+background: white;
+color: #333;
+}
+
+button:hover {
+opacity: 0.85;
+}
+
+.signin {
+background: #3030a8;
+color: white;
+border: none;
+}
+
+.form-box form .signin {
+width: 100%;
+margin-top: 20px;
+}
+
+.new-user {
+text-align: center;
+margin-top: 20px;
+}
+
+.buttons {
+display: flex;
+gap: 8px;
+margin-top: 12px;
+}
+
+.buttons button {
+flex: 1;
+font-size: 12px;
+}
+
+/* Registration background */
+.overlay {
+position: fixed;
+inset: 0;
+background: #00000045;
+display: none;
+align-items: center;
+justify-content: center;
+padding: 15px;
+}
+
+/* Registration form */
+.register-box {
+position: relative;
+background: white;
+width: 100%;
+max-width: 430px;
+max-height: 90vh;
+overflow-y: auto;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 8px 30px #00000025;
+}
+
+.register-box h3 {
+margin-top: 0;
+margin-bottom: 6px;
+}
+
+.register-box p {
+font-size: 12px;
+color: #777;
+}
+
+.register-box .buttons {
+justify-content: flex-end;
+margin-top: 25px;
+}
+
+.register-box .buttons button {
+flex: initial;
+min-width: 75px;
+}
+
+.register-box .buttons .signin {
+flex: 1;
+}
+
+/* Close button */
+.close {
+position: absolute;
+right: 15px;
+top: 15px;
+padding: 5px 9px;
+border: none;
+background: #f0f0f0;
+}
+
+/* Small-screen adjustments */
+@media (max-width: 480px) {
+header h2 {
+font-size: 15px;
+}
+
+.form-box,
+.register-box {
+padding: 20px;
+}
+}
